@@ -1,10 +1,10 @@
-<p align="center"><img src="assets/logo-400.png" width="120" alt="Skael logo"></p>
+<p align="center"><img src="assets/logo-400.png" width="120" alt="Skael API logo"></p>
 
-# Skael MCP server
+# Skael API MCP server
 
-German B2B lead lists from company registers, Google Maps, job boards and imprints, with verified emails.
+Lead lists from Google Maps, websites, job boards and German company registers, with verified emails.
 
-Skael is a **hosted, remote MCP server**. There is nothing to clone, build or run: point your MCP client at the endpoint below and sign in. This repository holds the setup guide; the server source is not public.
+Skael API is a **hosted, remote MCP server**. There is nothing to clone, build or run: point your MCP client at the endpoint below and sign in. This repository holds the setup guide; the server source is not public.
 
 | | |
 | --- | --- |
@@ -13,11 +13,11 @@ Skael is a **hosted, remote MCP server**. There is nothing to clone, build or ru
 | Auth | OAuth 2.1 (dynamic client registration, PKCE) or a personal token as `Authorization: Bearer eak_…` |
 | Official MCP Registry | [`de.skael.api/skael`](https://registry.modelcontextprotocol.io/v0.1/servers?search=de.skael.api/skael) |
 | Docs | https://api.skael.de/docs/mcp |
-| Sign-up | https://api.skael.de (free credits on registration) |
+| Website | https://api.skael.de/en/ (free sign-up with free credits) |
 
 ## What it does
 
-Describe your target customers in plain language in Claude, ChatGPT, Cursor, Cline or any client with remote MCP support. Skael finds companies and decision-makers in the German commercial register (Handelsregister), Google Maps, job boards and company imprints (Impressum), and verifies every email before it lands in your list.
+Describe your target customers in plain language in Claude, ChatGPT, Cursor, Cline or any client with remote MCP support. Skael API finds companies and decision-makers on Google Maps, company websites and imprints, job boards and the German commercial register (Handelsregister), and verifies every email before it lands in your list. It works worldwide; the German register data is its strength.
 
 - **Lead lists:** a short interview about your target group, a paid test on a small sample, and after your OK the full run. The CSV arrives by mail and on the run page.
 - **Single lookups:** the verified website for a company name, email finder, email verification, Handelsregister company data, LinkedIn enrichments.
@@ -39,7 +39,7 @@ Every tool that costs credits states the price first. Anything above 500 credits
 }
 ```
 
-Cursor opens the Skael sign-in on the first call.
+Cursor opens the Skael API sign-in on the first call.
 
 ### Claude Code
 
@@ -47,11 +47,11 @@ Cursor opens the Skael sign-in on the first call.
 claude mcp add --transport http skael https://api.skael.de/mcp
 ```
 
-Then run `/mcp` and choose Authenticate. With a token instead: create one under Settings → MCP in the Skael dashboard and add `--header "Authorization: Bearer <YOUR_MCP_TOKEN>"`.
+Then run `/mcp` and choose Authenticate. With a token instead: create one under Settings → MCP in the Skael API dashboard and add `--header "Authorization: Bearer <YOUR_MCP_TOKEN>"`.
 
 ### Claude (claude.ai, Claude Desktop)
 
-Settings → Connectors → Add custom connector. Name `Skael`, URL `https://api.skael.de/mcp`, then Connect and sign in.
+Settings → Connectors → Add custom connector. Name `Skael API`, URL `https://api.skael.de/mcp`, then Connect and sign in.
 
 ### ChatGPT
 
@@ -77,6 +77,6 @@ A personal MCP token (`eak_…`) is created per member on `/settings/mcp` in the
 
 ## Operator and support
 
-Skael is operated by David Lionel Wassilowsky (Skael, sole proprietorship, Germany). Imprint: https://api.skael.de/impressum · Terms: https://api.skael.de/agb
+Skael API is operated by Skael (David Lionel Wassilowsky, sole proprietorship, Germany). Imprint: https://api.skael.de/impressum · Terms: https://api.skael.de/agb
 
 Questions or problems: open an issue in this repository.

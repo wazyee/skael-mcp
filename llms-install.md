@@ -1,11 +1,11 @@
-# Installing the Skael MCP server
+# Installing the Skael API MCP server
 
-Skael is a hosted, remote MCP server. Do not clone or build anything. Add the remote endpoint to the client configuration.
+Skael API is a hosted, remote MCP server. Do not clone or build anything. Add the remote endpoint to the client configuration.
 
 ## Cline
 
-1. The user needs a Skael account (https://api.skael.de, free sign-up).
-2. Ask the user to create a personal MCP token in the Skael dashboard under Settings → MCP (`/settings/mcp`). It starts with `eak_`.
+1. The user needs a Skael API account (https://api.skael.de/en/, free sign-up).
+2. Ask the user to create a personal MCP token in the Skael API dashboard under Settings → MCP (`/settings/mcp`). It starts with `eak_`.
 3. Add this entry to `cline_mcp_settings.json`, with the token in place of `<YOUR_MCP_TOKEN>`:
 
 ```json
@@ -31,5 +31,5 @@ Keep the word `Bearer` and the space before the token.
 ## Notes
 
 - Tools that cost credits always state the price first. Anything above 500 credits needs explicit confirmation from the user.
-- Clients with OAuth support can omit the `headers` block; they open the Skael sign-in on the first call.
+- Clients with OAuth support can omit the `headers` block; they open the Skael API sign-in on the first call.
 - Full documentation: https://api.skael.de/docs/mcp
