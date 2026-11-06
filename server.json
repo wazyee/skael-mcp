@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "de.skael.api/skael",
+  "description": "Lead lists from German company registers, Google Maps, job boards and imprints with verified emails",
+  "title": "Skael",
+  "version": "1.0.0",
+  "websiteUrl": "https://api.skael.de/docs/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.skael.de/mcp"
+    }
+  ]
+}
