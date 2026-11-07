@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "skael-api",
+  "version": "1.0.0",
+  "description": "Lead lists from Google Maps, websites, job boards and German company registers, with verified emails",
+  "author": {
+    "name": "Skael (David Lionel Wassilowsky)",
+    "url": "https://api.skael.de/en/"
+  },
+  "homepage": "https://api.skael.de/docs/mcp",
+  "repository": "https://github.com/wazyee/skael-mcp",
+  "license": "LicenseRef-Proprietary",
+  "keywords": ["leads", "lead-generation", "google-maps", "b2b", "email-verification", "company-register", "germany", "mcp"]
+}
